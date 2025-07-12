@@ -7,7 +7,11 @@ import cors from 'cors';
 const app = express();
 
 const corsOptions = {
-    origin: 'https://testproject-1-rpd2.onrender.com', // Set your frontend static URL here
+    origin: [
+        'https://testproject-1-rpd2.onrender.com',
+        'https://eventrix-website.vercel.app',
+        'http://localhost:3000'
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
     credentials: true, // Allow cookies if necessary
 };
